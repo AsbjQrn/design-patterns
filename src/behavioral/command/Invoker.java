@@ -1,4 +1,4 @@
-package command;
+package behavioral.command;
 
 public class Invoker {
 

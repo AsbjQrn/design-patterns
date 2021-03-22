@@ -1,4 +1,4 @@
-package builder;
+package creational.builder;
 
 public class BankAccount {
 
@@ -48,9 +48,9 @@ public class BankAccount {
             this.fornavn = fornavn;
             this.efternavn = efternavn;
         }
-        
-        AccountBuilder setAccountNumber(int accountNumber){
-            this.accountNumber = accountNumber; 
+
+        AccountBuilder setAccountNumber(int accountNumber) {
+            this.accountNumber = accountNumber;
             return this;
         }
 
@@ -84,7 +84,7 @@ public class BankAccount {
             return accountNumber;
         }
 
-        BankAccount build(){
+        BankAccount build() {
             return new BankAccount(this);
         }
     }
