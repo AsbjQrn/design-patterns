@@ -1,0 +1,21 @@
+Observer
+
+Dette mønster har et centralt object som kaldes subject. Dette subject observeres af en mængde observers.
+
+Der er en en-til-mange relation fra subjectet til disse observers.
+
+Subjectet kan indeholde en liste over observers som alle har en metode der kaldes, når subjectet ændres.
+
+Observer mønstret overholder open-closed princippet, fordi subjectet kan extendes til at kalde flere observers,
+uden at man skal ændre klassen.
+
+Feks kunne man forestille sig en Atomreaktor klasse. Den vil i mønsteret være subject.
+
+Det er vigtigt at overvåge atomreaktoren. Derfor skrives forskellige observerklasser.
+
+I eksemplet skrives:
+En Atomreaktor.
+En observer som reagerer, hvis temperaturen bliver for høj.
+En observer som reagerer, hvis temperaturen bliver for lav.
+En observer som reagerer, hver gang temperaturen ændrer sig.
+

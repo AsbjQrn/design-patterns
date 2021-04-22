@@ -1,0 +1,14 @@
+
+Hvorfor koder man til et interface:
+
+Der er en kodeteknik der bygger på at man laver interfacet først og koder til det, istedet for at implementere alting inden man binder det sammen.
+I Tdd man kan man mocke og stubbe sit interface.
+Man kan i nogle tilfælde opnå større fleksiblilitet ved at bruge interfaces. Her er et eksempel:
+
+
+
+
+
+
+Læs også:
+https://medium.com/javarevisited/oop-good-practices-coding-to-the-interface-baea84fd60d3#:~:text=Simple%3A%20%E2%80%9CCoding%20to%20interfaces%2C,actual%20class%20with%20the%20implementation.

@@ -1,0 +1,9 @@
+Memento
+
+Dette mønster handler om at gemme en state fra et object.
+
+Det objekt hvis state skal gemmes kaldes originator. Det har en metode til at danne et memento og en metode til at
+genskabe sin state udfra et gemt memento.
+
+Derudover involverer mønsteret en caretaker - det objekt som opbevarer mementoer. Samt selvfølge selve mementoet,
+der opbevarer den oprindelige state.
