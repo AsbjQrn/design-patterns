@@ -1,4 +1,4 @@
-package creational.builder.kata;
+package creational.builder.kata.a;
 
 public class BygBlondine {
 

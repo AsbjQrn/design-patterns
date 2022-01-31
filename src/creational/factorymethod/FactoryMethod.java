@@ -4,7 +4,7 @@ public class FactoryMethod {
 
 
     //use getPlan method to get object of type Plan
-    public Plan getPlan(String planType) {
+    public static Plan getPlan(String planType) {
         if (planType == null) {
             return null;
         }

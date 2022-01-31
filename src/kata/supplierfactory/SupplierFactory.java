@@ -17,7 +17,7 @@ public class SupplierFactory {
     private static final Supplier presentPast = new PresentPast();
     private static final List<Suppliertype> suppliers = Arrays.asList(Suppliertype.values());
 
-    public static Supplier getSupplier(String configurationValue) {
+    public static Supplier supplierOf(String configurationValue) {
 
         if (suppliers.contains(configurationValue)) {
             switch (Suppliertype.valueOf(configurationValue)) {

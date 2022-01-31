@@ -11,11 +11,11 @@ public class Runner {
 
         Supplier supplier;
 
-        supplier = SupplierFactory.getSupplier(Suppliertype.PRESENT_PAST.toString());
-        supplier.get();
+        supplier = SupplierFactory.supplierOf(Suppliertype.PRESENT_PAST.toString());
+        System.out.println(supplier.get());
 
-        supplier = SupplierFactory.getSupplier("EKSISTERER_IKKE");
-        supplier.get();
+        supplier = SupplierFactory.supplierOf("EKSISTERER_IKKE");
+        System.out.println(supplier.get());
 
     }
 }

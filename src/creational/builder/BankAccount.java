@@ -1,12 +1,12 @@
 package creational.builder;
 
-public class BankAccount {
+public final class BankAccount {
 
-    private String fornavn;
-    private String efternavn;
-    private boolean newletter;
-    private String email;
-    private int accountNumber;
+    private final String fornavn;
+    private final String efternavn;
+    private final boolean newletter;
+    private final String email;
+    private final int accountNumber;
 
     private BankAccount(AccountBuilder accountBuilder) {
         this.fornavn = accountBuilder.getFornavn();
@@ -38,10 +38,10 @@ public class BankAccount {
 
     public static class AccountBuilder {
 
-        String fornavn;
-        String efternavn;
-        boolean newletter;
-        String email;
+        private final String fornavn;
+        private final String efternavn;
+        private boolean newletter;
+        private String email;
         private int accountNumber;
 
         public AccountBuilder(String fornavn, String efternavn) {
@@ -49,17 +49,17 @@ public class BankAccount {
             this.efternavn = efternavn;
         }
 
-        AccountBuilder setAccountNumber(int accountNumber) {
+        public AccountBuilder withAccountNumber(int accountNumber) {
             this.accountNumber = accountNumber;
             return this;
         }
 
-        AccountBuilder withEmail(String email) {
+        public AccountBuilder withEmail(String email) {
             this.email = email;
             return this;
         }
 
-        AccountBuilder wantsNewsletter(boolean newletter) {
+        public AccountBuilder wantsNewsletter(boolean newletter) {
             this.newletter = newletter;
             return this;
         }
