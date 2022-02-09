@@ -1,0 +1,9 @@
+Proxy handler om at genbruge et instantieret object og skjule kompleksiteten i dette.
+
+Både proxyen og det dyre object ligger i samme klassehierarki og arver fra samme supoer klasse.
+
+Proxy kan altså bruges istedet for en implementerende klasse da den kan instansieres med samme type.
+
+Proxyen delegerer o0pgaven til den Implementeren klasse og holde en instasn af denne som genbruges for at spare.
+
+Hvis den implementerende kalsse er null instantieres den og gemmes.

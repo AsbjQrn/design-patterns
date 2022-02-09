@@ -5,6 +5,6 @@ Mønsteret består grundlæggende i en overordnet abstract klasse.
 Denne klasse har en variabel med sig selv som type. Variablen indeholder "den næste klasse" - som kan håndtere et request.
 
 Derudover findes en abstract metode som tivinger implementerende klasser til at få et fælles interface.
-Metoden er den som afgør om den implementerende klasse kan håndtere "requested". Hvis ikke sendes requested videre til "den næste klasse".
+Metoden er den som afgør om den implementerende klasse kan håndtere "requested". Hvis ikke sendes requested videre til
+"den næste klasse", som har en næste klasse, som har en næste klasse og så videre ...
 
-Osv

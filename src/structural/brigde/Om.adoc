@@ -1,0 +1,15 @@
+Dette mønster handler om to eller flere abstractioner, der arbejder sammen.
+
+Feks møbler, materialer og farver.
+Former og farver.
+Køretøjer og deres produktionsproces.
+
+Det gennemgående er at der er tale om faste abstractioner.
+
+En abstract klasse indeholder en reference til en (eller flere) abstraction(er), som så kan variere ud fra betingelser under runtime.
+En bus og en bil har det tilfælles at de begge har en farve og er køretøjer.
+Derfor kan de nedbrydes til to abstraktioner: Køretøj og Farve. Der findes mange slags køretøjer og mange farver.
+Derfor er det vigtigt at operere med abstractionerne.
+
+
+
