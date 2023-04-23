@@ -1,4 +1,4 @@
-package creational.factorymethod;
+package creational.factorymethod.eksempel1;
 
 public class FactoryMethod {
 
